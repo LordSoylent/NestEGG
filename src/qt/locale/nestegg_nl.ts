@@ -6081,11 +6081,11 @@ NESTEGG Core Portemonnee</translation>
         <translation>Kan niet genoeg verduistering gedenomineerde fondsen voor deze transactie vinden.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 EGG.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 EGG.</source>
         <translation>Kan niet genoeg verduistering niet gedenomineerde fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 EGG.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 EGG.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 EGG.</source>
         <translation>Kan niet genoeg fondsen voor deze transactie vinden die niet gelijk zijn aan 10000 EGG.</translation>
     </message>
     <message>

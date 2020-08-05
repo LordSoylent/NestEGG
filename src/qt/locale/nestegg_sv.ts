@@ -4336,11 +4336,11 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Kan ej lokalisera tillräckligt Fördunklingsdenominationerade pengar för denna transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 EGG.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 EGG.</source>
         <translation>Kan ej lokalisera tillräckligt Fördunkling icke-denominationerade pengar för denna transaktion som inte är 10000 EGG.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 EGG.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 EGG.</source>
         <translation>Kan inte hitta tillräckligt med pengar för denna transaktion som inte är 10000 EGG.</translation>
     </message>
     <message>

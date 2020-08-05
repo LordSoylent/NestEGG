@@ -6069,11 +6069,11 @@ Portefeuille NESTEGG Core</translation>
         <translation>Incapable de localiser suffisamment de fonds non-dénommés pour l'Obfuscation de cette transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 EGG.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 EGG.</source>
         <translation>Incapable de localiser suffisamment de fonds non-dénommés pour l'Obfuscation de cette transaction qui ne sont pas égaux à 10000 EGG.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 EGG.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 EGG.</source>
         <translation>Impossible de grouper assez de fonds pour cette transaction qui n'est pas égale à 10000 EGG.</translation>
     </message>
     <message>

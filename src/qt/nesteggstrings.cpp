@@ -211,7 +211,7 @@ QT_TRANSLATE_NOOP("nestegg-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("nestegg-core", ""
 "Unable to locate enough Obfuscation non-denominated funds for this "
-"transaction that are not equal 10000 EGG."),
+"transaction that are not equal 25000 EGG."),
 QT_TRANSLATE_NOOP("nestegg-core", ""
 "Unable to locate enough funds for this transaction that are not equal 10000 "
 "EGG."),

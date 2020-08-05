@@ -3125,11 +3125,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Не намираме достатъчно Обфускационно деноминирани средства за този превод.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 10000 EGG.</source>
+        <source>Unable to locate enough Obfuscation non-denominated funds for this transaction that are not equal 25000 EGG.</source>
         <translation>Не можем да намерим достатъчно Обфускационно не-деноминирани средства за този превод, които да не са равни на 10000 EGG.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 EGG.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 25000 EGG.</source>
         <translation>Не намираме достатъчно средства за този превод, които да не са равни на 10000 EGG.</translation>
     </message>
     <message>
