@@ -1,0 +1,81 @@
+policy_module(nestegg, 1.100.1)
+
+########################################
+#
+# Declarations
+#
+
+type nestegg_t;
+type nestegg_exec_t;
+init_daemon_domain(nestegg_t, nestegg_exec_t)
+
+permissive nestegg_t;
+
+type nestegg_initrc_exec_t;
+init_script_file(nestegg_initrc_exec_t)
+
+type nestegg_conf_t;
+files_type(nestegg_conf_t)
+
+type nestegg_var_lib_t;
+files_type(nestegg_var_lib_t)
+
+type nestegg_var_run_t;
+files_type(nestegg_var_run_t)
+
+type nestegg_port_t;
+corenet_port(nestegg_port_t)
+
+########################################
+#
+# nestegg local policy
+#
+allow nestegg_t self:process { fork };
+
+allow nestegg_t self:fifo_file rw_fifo_file_perms;
+allow nestegg_t self:unix_stream_socket create_stream_socket_perms;
+
+manage_dirs_pattern(nestegg_t, nestegg_conf_t, nestegg_conf_t)
+manage_files_pattern(nestegg_t, nestegg_conf_t, nestegg_conf_t)
+
+manage_dirs_pattern(nestegg_t, nestegg_var_lib_t, nestegg_var_lib_t)
+manage_files_pattern(nestegg_t, nestegg_var_lib_t, nestegg_var_lib_t)
+files_var_lib_filetrans(nestegg_t, nestegg_var_lib_t, { dir file })
+
+manage_dirs_pattern(nestegg_t, nestegg_var_run_t, nestegg_var_run_t)
+manage_files_pattern(nestegg_t, nestegg_var_run_t, nestegg_var_run_t)
+
+sysnet_dns_name_resolve(nestegg_t)
+corenet_all_recvfrom_unlabeled(nestegg_t)
+
+allow nestegg_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(nestegg_t)
+corenet_tcp_sendrecv_generic_node(nestegg_t)
+corenet_tcp_sendrecv_all_ports(nestegg_t)
+corenet_tcp_bind_generic_node(nestegg_t)
+
+gen_require(`
+    type nestegg_port_t;
+')
+allow nestegg_t nestegg_port_t:tcp_socket name_bind;
+
+gen_require(`
+    type nestegg_port_t;
+')
+allow nestegg_t nestegg_port_t:tcp_socket name_connect;
+
+domain_use_interactive_fds(nestegg_t)
+
+files_read_etc_files(nestegg_t)
+
+miscfiles_read_localization(nestegg_t)
+
+sysnet_dns_name_resolve(nestegg_t)
+
+allow nestegg_t nestegg_exec_t:file execute_no_trans;
+allow nestegg_t self:process setsched;
+corecmd_exec_ls(nestegg_t)
+corenet_tcp_connect_http_port(nestegg_t)
+dev_read_urand(nestegg_t)
+fs_getattr_xattr_fs(nestegg_t)
+kernel_read_system_state(nestegg_t)

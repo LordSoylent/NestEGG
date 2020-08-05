@@ -1,0 +1,15 @@
+# http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-1.0.html
+
+[Desktop Entry]
+Encoding=UTF-8
+Name=NESTEGG Core
+Comment=NESTEGG Core QT test network
+GenericName=NESTEGG Digital Currency QT client testnet network
+Exec=nestegg-core.qt-testnet %u
+Terminal=false
+Type=Application
+Icon=${SNAP}/share/pixmaps/nestegg_testnet.png
+MimeType=x-scheme-handler/egg;
+Categories=X-Office;X-Finance;
+Keywords=internet;nestegg;zegg;tegg;core;wallet;qt;testnet;snap;launchpad;crypto;digital;currency;coin;token;zerocoin;
+Version=1.0
