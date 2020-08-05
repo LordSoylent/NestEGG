@@ -53,7 +53,6 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (54747, uint256("0000000028b6283147a42c3b62f39aa7bbb3647c47a4850370745e4b29128f1a"))
     (54747, uint256("0000000028b6283147a42c3b62f39aa7bbb3647c47a4850370745e4b29128f1a"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -171,23 +170,23 @@ public:
         nMinColdStakingAmount = 1 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 10000000;
+        nLastPOWBlock = 56600;
         nModifierUpdateBlock = 0;
         nZerocoinStartHeight = 0;
         nZerocoinStartTime = 1593067522;
         nBlockEnforceSerialRange = 1;
-        nBlockRecalculateAccumulators = 55220;
+        nBlockRecalculateAccumulators = 99999999;
         nBlockFirstFraudulent = 54230;
         nBlockLastGoodCheckpoint = 54240;
         nBlockEnforceInvalidUTXO = 54250;
         nInvalidAmountFiltered = 0*COIN;
-        nBlockZerocoinV2 = 55330;
+        nBlockZerocoinV2 = 56830;
         nBlockDoubleAccumulated = 54260;
         nEnforceNewSporkKey = 1593067522;
         nRejectOldSporkKey = 1527811200;
-        nBlockStakeModifierlV2 = 55420;
-        nBIP65ActivationHeight = 55410;
-        nBlockTimeProtocolV2 = 55400;
+        nBlockStakeModifierlV2 = 56820;
+        nBIP65ActivationHeight = 56810;
+        nBlockTimeProtocolV2 = 56800;
 
         // Public coin spend enforcement
         nPublicZCSpends = 54745;
