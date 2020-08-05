@@ -427,8 +427,8 @@ void MasterNodesWidget::onDeleteMNClicked(){
 
 void MasterNodesWidget::onCreateMNClicked(){
     if(verifyWalletUnlocked()) {
-        if(walletModel->getBalance() <= (COIN * 10000)){
-            inform(tr("Not enough balance to create a masternode, 10,000 EGG required."));
+        if(walletModel->getBalance() <= (COIN * 25000)){
+            inform(tr("Not enough balance to create a masternode, 25,000 EGG required."));
             return;
         }
         showHideOp(true);
