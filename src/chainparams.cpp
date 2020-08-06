@@ -235,7 +235,12 @@ public:
         assert(hashGenesisBlock == uint256("0x000000fe0f6f6f7f005bb1373daebbff98b69a2c2376efb7ea9b86ce4bea7d72"));
         assert(genesis.hashMerkleRoot == uint256("0x6ec31ff0ff13142c02dff7da188167ef9bb2adc8b7b646b2d1b859c31be062cc"));
 
-        vSeeds.push_back(CDNSSeedData("walletbuilders.com", "node1.walletbuilders.com"));
+        vSeeds.push_back(CDNSSeedData("207.148.24.94", "207.148.24.94"));
+        vSeeds.push_back(CDNSSeedData("149.28.205.121", "149.28.205.121"));
+        vSeeds.push_back(CDNSSeedData("136.244.67.15", "136.244.67.15"));
+        vSeeds.push_back(CDNSSeedData("45.77.133.78", "45.77.133.78"));
+        vSeeds.push_back(CDNSSeedData("207.148.1.73", "207.148.1.73"));
+        vSeeds.push_back(CDNSSeedData("139.180.170.177", "139.180.170.177"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 33);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 34);
