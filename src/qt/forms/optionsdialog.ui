@@ -30,10 +30,10 @@
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start NESTEGG after logging in to the system.</string>
+          <string>Automatically start NestEgg after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start NESTEGG on system login</string>
+          <string>&amp;Start NestEgg on system login</string>
          </property>
         </widget>
        </item>
@@ -131,8 +131,8 @@
         </spacer>
        </item>
        <item>
-        <widget class="QWidget" name="verticalZeggOptionsWidget" native="true">
-         <layout class="QVBoxLayout" name="verticalZeggOptionsLayout">
+        <widget class="QWidget" name="verticalZpivOptionsWidget" native="true">
+         <layout class="QVBoxLayout" name="verticalZpivOptionsLayout">
           <property name="margin">
            <number>0</number>
           </property>
@@ -325,7 +325,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the NESTEGG client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the NestEgg client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -345,7 +345,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the NESTEGG network through a SOCKS5 proxy.</string>
+          <string>Connect to the NestEgg network through a SOCKS5 proxy.</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS5 proxy (default proxy):</string>
@@ -511,7 +511,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting NESTEGG.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting NestEgg.</string>
            </property>
           </widget>
          </item>
@@ -533,7 +533,7 @@
          </property>
          <property name="text">
           <string>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/nestegg-project/nestegg-project-translations</string>
+https://www.transifex.com/pivx-project/pivx-project-translations</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>
@@ -561,8 +561,8 @@ https://www.transifex.com/nestegg-project/nestegg-project-translations</string>
         </layout>
        </item>
        <item>
-        <widget class="QWidget" name="verticalZeggDisplayWidget" native="true">
-         <layout class="QVBoxLayout" name="verticalZeggDisplayLayout">
+        <widget class="QWidget" name="verticalZpivDisplayWidget" native="true">
+         <layout class="QVBoxLayout" name="verticalZpivDisplayLayout">
           <property name="margin">
            <number>0</number>
           </property>

@@ -32,10 +32,10 @@ git config --global user.email "MY_NAME@example.com"
 Fetching the Build Script
 --------------------------
 
-The build script we'll be using is contained in the NESTEGG github repository ([contrib/gitian-build.py](https://github.com/nestegg-project/nestegg/blob/master/contrib/gitian-build.py)). Since this is a completely fresh environment, we haven't yet cloned the NESTEGG repository and will need to fetch this script with the following commands:
+The build script we'll be using is contained in the NestEgg github repository ([contrib/gitian-build.py](https://github.com/eggcoin-com/egg/blob/master/contrib/gitian-build.py)). Since this is a completely fresh environment, we haven't yet cloned the NestEgg repository and will need to fetch this script with the following commands:
 
 ```bash
-curl -L -O https://raw.githubusercontent.com/NESTEGG-Project/NESTEGG/master/contrib/gitian-build.py
+curl -L -O https://raw.githubusercontent.com/eggcoin-com/egg/master/contrib/gitian-build.py
 chmod +x gitian-build.py
 ```
 
@@ -49,7 +49,7 @@ Initial Gitian Setup
 Now that the script has been downloaded to your home directory, its time to run it in setup mode. This will perform the following actions:
 
 - Install the necessary system packages for gitian (namely Docker and it's related cli tools).
-- Clone the gitian-builder, gitian.sigs, nestegg-detached-sigs, and nestegg GitHub repos.
+- Clone the gitian-builder, gitian.sigs, pivx-detached-sigs, and NestEgg GitHub repos.
 - Configure proper user/group permissions for running gitian with Docker
 - Create a base Docker image.
 

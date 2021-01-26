@@ -1,9 +1,10 @@
-// Copyright (c) 2018 The NESTEGG developers
+// Copyright (c) 2018 The PIVX developers
+// Copyright (c) 2020-2021 The NestEgg Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef NESTEGG_SPENDTYPE_H
-#define NESTEGG_SPENDTYPE_H
+#ifndef PIVX_SPENDTYPE_H
+#define PIVX_SPENDTYPE_H
 
 #include <cstdint>
 
@@ -16,4 +17,4 @@ namespace libzerocoin {
     };
 }
 
-#endif //NESTEGG_SPENDTYPE_H
+#endif //PIVX_SPENDTYPE_H

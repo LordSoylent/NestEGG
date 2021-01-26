@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2020 The NESTEGG developers
+# Copyright (c) 2020 The PIVX developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,18 +11,18 @@ Node1 imports and rescans. The test checks that cold utxos and staking balance i
 
 from time import sleep
 
-from test_framework.test_framework import NestEggTestFramework
+from test_framework.test_framework import PivxTestFramework
 from test_framework.util import (
     assert_equal,
     DecimalAmt,
     sync_blocks,
 )
 
-class ImportStakingTest(NestEggTestFramework):
+class ImportStakingTest(PivxTestFramework):
 
     def set_test_params(self):
         self.num_nodes = 2
-        self.extra_args = [['-staking=0']] * self.num_nodes
+        self.extra_args = [[]] * self.num_nodes
         self.extra_args[0].append('-sporkkey=932HEevBSujW2ud7RfB1YF91AFygbBRQj3de3LyaCRqNzKKgWXi')
 
     def log_title(self):
@@ -35,7 +35,7 @@ class ImportStakingTest(NestEggTestFramework):
         NUM_OF_DELEGATIONS = 4  # Create 2*NUM_OF_DELEGATIONS staking addresses
         self.log_title()
         self.log.info("Activating cold staking spork")
-        assert_equal("success", self.activate_spork(0, "SPORK_17_COLDSTAKING_ENFORCEMENT"))
+        assert_equal("success", self.activate_spork(0, "SPORK_18_COLDSTAKING_ENFORCEMENT"))
 
         # Create cold staking addresses and delegations
         self.log.info("Creating new staking addresses and sending delegations")
@@ -43,11 +43,11 @@ class ImportStakingTest(NestEggTestFramework):
                              for i in range(2 * NUM_OF_DELEGATIONS)]
         delegations = []
         for i, sa in enumerate(staking_addresses):
-            # delegate 10 EGG
+            # delegate 10 PIV
             delegations.append(self.nodes[0].delegatestake(sa, 10)['txid'])
             # mine a block and check staking balance
             self.nodes[0].generate(1)
-            assert_equal(self.nodes[0].getcoldstakingbalance(), DecimalAmt(10 * (i+1)))
+            assert_equal(self.nodes[0].getdelegatedbalance(), DecimalAmt(10 * (i+1)))
             sync_blocks(self.nodes)
 
         # Export keys

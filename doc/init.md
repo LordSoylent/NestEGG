@@ -44,7 +44,7 @@ This allows for running nesteggd without having to do any manual configuration.
 relative to the data directory. `wallet` *only* supports relative paths.
 
 For an example configuration file that describes the configuration settings,
-see contrib/debian/examples/nestegg.conf.
+see contrib/debian/examples/pivx.conf.
 
 Paths
 ---------------------------------
@@ -84,9 +84,9 @@ OpenRC).
 ### macOS
 
 Binary:              `/usr/local/bin/nesteggd`
-Configuration file:  `~/Library/Application Support/NESTEGG/nestegg.conf`
-Data directory:      `~/Library/Application Support/NESTEGG`
-Lock file:           `~/Library/Application Support/NESTEGG/.lock`
+Configuration file:  `~/Library/Application Support/NestEgg/nestegg.conf`
+Data directory:      `~/Library/Application Support/NestEgg`
+Lock file:           `~/Library/Application Support/NestEgg/.lock`
 
 Installing Service Configuration
 -----------------------------------
@@ -129,14 +129,14 @@ setting the NESTEGGD and FLAGS environment variables in the file
 
 ### macOS
 
-Copy org.nestegg.nesteggd.plist into ~/Library/LaunchAgents. Load the launch agent by
-running `launchctl load ~/Library/LaunchAgents/org.nestegg.nesteggd.plist`.
+Copy org.pivx.pivxd.plist into ~/Library/LaunchAgents. Load the launch agent by
+running `launchctl load ~/Library/LaunchAgents/org.pivx.pivxd.plist`.
 
-This Launch Agent will cause nesteggd to start whenever the user logs in.
+This Launch Agent will cause pivxd to start whenever the user logs in.
 
-NOTE: This approach is intended for those wanting to run nesteggd as the current user.
-You will need to modify org.nestegg.nesteggd.plist if you intend to use it as a
-Launch Daemon with a dedicated nestegg user.
+NOTE: This approach is intended for those wanting to run pivxd as the current user.
+You will need to modify org.pivx.pivxd.plist if you intend to use it as a
+Launch Daemon with a dedicated pivx user.
 
 Auto-respawn
 -----------------------------------

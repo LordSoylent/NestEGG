@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2017-2019 The NESTEGG developers
+// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2020-2021 The NestEgg Core Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -8,7 +9,7 @@
 #define BITCOIN_BIGNUM_H
 
 #if defined HAVE_CONFIG_H
-#include "config/nestegg-config.h"
+#include "config/pivx-config.h"
 #endif
 
 #if defined(USE_NUM_OPENSSL)
@@ -98,22 +99,17 @@ public:
     std::string GetHex() const;
     std::string GetDec() const;
 
-    unsigned int GetSerializeSize(int nType=0, int nVersion=PROTOCOL_VERSION) const
+    template<typename Stream>
+    void Serialize(Stream& s) const
     {
-        return ::GetSerializeSize(getvch(), nType, nVersion);
+        ::Serialize(s, getvch());
     }
 
     template<typename Stream>
-    void Serialize(Stream& s, int nType=0, int nVersion=PROTOCOL_VERSION) const
-    {
-        ::Serialize(s, getvch(), nType, nVersion);
-    }
-
-    template<typename Stream>
-    void Unserialize(Stream& s, int nType=0, int nVersion=PROTOCOL_VERSION)
+    void Unserialize(Stream& s)
     {
         std::vector<unsigned char> vch;
-        ::Unserialize(s, vch, nType, nVersion);
+        ::Unserialize(s, vch);
         setvch(vch);
     }
 

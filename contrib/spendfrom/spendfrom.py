@@ -7,7 +7,7 @@
 #  spendfrom.py  # Lists available funds
 #  spendfrom.py --from=ADDRESS --to=ADDRESS --amount=11.00
 #
-# Assumes it will talk to a nesteggd or nestegg-Qt running
+# Assumes it will talk to a nesteggd or nestegg-qt running
 # on localhost.
 #
 # Depends on jsonrpc
@@ -35,9 +35,9 @@ def check_json_precision():
 def determine_db_dir():
     """Return the default location of the nestegg data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/NESTEGG/")
+        return os.path.expanduser("~/Library/Application Support/NestEgg/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "NESTEGG")
+        return os.path.join(os.environ['APPDATA'], "NestEgg")
     return os.path.expanduser("~/.nestegg")
 
 def read_bitcoin_config(dbdir):
@@ -67,7 +67,7 @@ def connect_JSON(config):
     testnet = config.get('testnet', '0')
     testnet = (int(testnet) > 0)  # 0/1 in config file, convert to True/False
     if not 'rpcport' in config:
-        config['rpcport'] = 51475 if testnet else 51473
+        config['rpcport'] = 46329 if testnet else 51473
     connect = "http://%s:%s@127.0.0.1:%s"%(config['rpcuser'], config['rpcpassword'], config['rpcport'])
     try:
         result = ServiceProxy(connect)
@@ -110,7 +110,7 @@ def list_available(nesteggd):
         vout = rawtx["vout"][output['vout']]
         pk = vout["scriptPubKey"]
 
-        # This code only deals with ordinary pay-to-nestegg-address
+        # This code only deals with ordinary pay-to-pivx-address
         # or pay-to-script-hash outputs right now; anything exotic is ignored.
         if pk["type"] != "pubkeyhash" and pk["type"] != "scripthash":
             continue
@@ -229,7 +229,7 @@ def main():
     parser.add_option("--fee", dest="fee", default="0.0",
                       help="fee to include")
     parser.add_option("--datadir", dest="datadir", default=determine_db_dir(),
-                      help="location of nestegg.conf file with RPC username/password (default: %default)")
+                      help="location of pivx.conf file with RPC username/password (default: %default)")
     parser.add_option("--testnet", dest="testnet", default=False, action="store_true",
                       help="Use the test network")
     parser.add_option("--dry_run", dest="dry_run", default=False, action="store_true",

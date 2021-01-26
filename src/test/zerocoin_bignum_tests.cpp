@@ -1,4 +1,5 @@
-// Copyright (c) 2017-2019 The NESTEGG developers
+// Copyright (c) 2017-2019 The PIVX developers
+// Copyright (c) 2020-2021 The NestEgg Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -9,7 +10,7 @@
 #include "libzerocoin/Denominations.h"
 #include "libzerocoin/CoinSpend.h"
 #include "libzerocoin/Accumulator.h"
-#include "zegg/zerocoin.h"
+#include "zpiv/zerocoin.h"
 
 
 bool testRandKBitBignum(int k_bits)

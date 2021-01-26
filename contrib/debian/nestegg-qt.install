@@ -1,6 +1,0 @@
-usr/local/bin/nestegg-qt usr/bin
-share/pixmaps/nestegg32.xpm usr/share/pixmaps
-share/pixmaps/nestegg16.xpm usr/share/pixmaps
-share/pixmaps/nestegg128.png usr/share/pixmaps
-debian/nestegg-qt.desktop usr/share/applications
-debian/nestegg-qt.protocol usr/share/kde4/services/

@@ -1,9 +1,10 @@
-// Copyright (c) 2019 The NESTEGG developers
+// Copyright (c) 2019 The PIVX developers
+// Copyright (c) 2020-2021 The NestEgg Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef NESTEGG_PAIRRESULT_H
-#define NESTEGG_PAIRRESULT_H
+#ifndef PIVX_PAIRRESULT_H
+#define PIVX_PAIRRESULT_H
 
 
 class PairResult {
@@ -17,4 +18,4 @@ public:
 };
 
 
-#endif //NESTEGG_PAIRRESULT_H
+#endif //PIVX_PAIRRESULT_H

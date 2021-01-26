@@ -1,3 +1,0 @@
-usr/local/bin/nesteggd usr/bin
-usr/local/bin/nestegg-cli usr/bin
-debian/examples/nestegg.conf etc/nestegg

@@ -1,5 +1,6 @@
 // Copyright (c) 2012-2017 The Bitcoin Core developers
-// Copyright (c) 2016-2019 The NESTEGG developers
+// Copyright (c) 2016-2019 The PIVX developers
+// Copyright (c) 2020-2021 The NestEgg Core Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -13,7 +14,7 @@
  * for both nesteggd and nestegg-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("NESTEGG Core");
+const std::string CLIENT_NAME("NestEgg Core");
 
 /**
  * Client version number
@@ -45,8 +46,8 @@ const std::string CLIENT_NAME("NESTEGG Core");
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives. 
 #define GIT_ARCHIVE 1
 #ifdef GIT_ARCHIVE
-#define GIT_COMMIT_ID "ab06d6d568726ff1dcf1643c6147f16a937fa8a4"
-#define GIT_COMMIT_DATE "Thu, 16 Jan 2020 17:05:49 -0300"
+#define GIT_COMMIT_ID "22ed043487c5ea076ce4d4636b1b4fb0d96493e9"
+#define GIT_COMMIT_DATE "Tue, 12 Jan 2021 19:29:47 +0000"
 #endif
 
 #define BUILD_DESC_WITH_SUFFIX(maj, min, rev, build, suffix) \
