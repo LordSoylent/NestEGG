@@ -27,9 +27,9 @@ Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 Source10:	https://raw.githubusercontent.com/pivx-project/pivx/v%{version}/contrib/debian/examples/pivx.conf
 
 #man pages
-Source20:	https://raw.githubusercontent.com/eggcoin-com/egg/v%{version}/doc/man/nesteggd.1
-Source21:	https://raw.githubusercontent.com/eggcoin-com/egg/v%{version}/doc/man/nestegg-cli.1
-Source22:	https://raw.githubusercontent.com/eggcoin-com/egg/v%{version}/doc/man/nestegg-qt.1
+Source20:	https://raw.githubusercontent.com/SirElven8/NestEGG/v%{version}/doc/man/nesteggd.1
+Source21:	https://raw.githubusercontent.com/SirElven8/NestEGG/v%{version}/doc/man/nestegg-cli.1
+Source22:	https://raw.githubusercontent.com/SirElven8/NestEGG/v%{version}/doc/man/nestegg-qt.1
 
 #selinux
 Source30:	https://raw.githubusercontent.com/pivx-project/pivx/v%{version}/contrib/rpm/pivx.te
