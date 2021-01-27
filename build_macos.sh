@@ -7,7 +7,7 @@ then
 fi
 
 # Clone EGG code from EGG official Github repository
-	git clone https://github.com/eggcoin-com/EGG
+	git clone https://github.com/SirElven8/NestEGG
 
 # Entering EGG directory
 	cd EGG

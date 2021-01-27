@@ -11,7 +11,7 @@ fi
 	sudo apt install git zip unzip build-essential libtool bsdmainutils autotools-dev autoconf pkg-config automake python3 libqt5svg5-dev -y
 
 # Clone EGG code from EGG official Github repository
-	git clone https://github.com/eggcoin-com/EGG
+	git clone https://github.com/SirElven8/NestEGG
 
 # Entering EGG directory
 	cd EGG

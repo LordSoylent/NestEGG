@@ -12,7 +12,7 @@ fi
 	echo "1" | sudo update-alternatives --config x86_64-w64-mingw32-g++
 
 # Clone EGG code from EGG official Github repository
-	git clone https://github.com/eggcoin-com/EGG
+	git clone https://github.com/SirElven8/NestEGG
 
 # Entering EGG directory
 	cd EGG
