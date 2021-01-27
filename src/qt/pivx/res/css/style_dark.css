@@ -412,18 +412,18 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 *[cssClass="text-title-topbar"] {
-    color:#535353;
+    color:#ffffff;
     font-size:16px;
     font-weight: ligther;
 }
 
 *[cssClass="amount-topbar"] {
-    color:#3d3d3d;
+    color:#ffffff;
     font-size:35px;
 }
 
 *[cssClass="amount-small-topbar"] {
-    color:#3d3d3d;
+    color:#ffffff;
     font-size:22px;
 }
 
