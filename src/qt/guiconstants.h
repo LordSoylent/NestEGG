@@ -51,7 +51,7 @@ static const int MAX_URI_LENGTH = 255;
 
 
 #define QAPP_ORG_NAME "NestEgg"
-#define QAPP_ORG_DOMAIN "eggcoin.com"
+#define QAPP_ORG_DOMAIN "nesteggcoin.com"
 #define QAPP_APP_NAME_DEFAULT "NestEgg-Qt"
 #define QAPP_APP_NAME_TESTNET "NestEgg-Qt-testnet"
 

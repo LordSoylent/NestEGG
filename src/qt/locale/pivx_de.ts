@@ -3837,8 +3837,8 @@ Es gab ein Problem bei dem Versuch die Adressen unter %1 zu speichern. Bitte ver
         <translation>2) Wieso kann ich meine EGG nicht ausgeben?</translation>
     </message>
     <message>
-        <source>https://eggcoin.com/</source>
-        <translation>https://eggcoin.com/</translation>
+        <source>https://nesteggcoin.com/</source>
+        <translation>https://nesteggcoin.com/</translation>
     </message>
     <message>
         <source>1</source>

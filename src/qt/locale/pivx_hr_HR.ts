@@ -3743,8 +3743,8 @@ Došlo je do greške prilikom spremanja popisa adresa u %1. Molimo pokušajte po
         <translation>2) Zašto se moji EGG ne mogu potrošiti?</translation>
     </message>
     <message>
-        <source>https://eggcoin.com/</source>
-        <translation>https://eggcoin.com/</translation>
+        <source>https://nesteggcoin.com/</source>
+        <translation>https://nesteggcoin.com/</translation>
     </message>
     <message>
         <source>1</source>

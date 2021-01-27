@@ -3841,8 +3841,8 @@ Il y a eu une erreur de sauvegarde de la liste d'adresses vers %1. SVP rééssay
         <translation>2) Pourquoi mes EGG ne peuvent pas être dépensés?</translation>
     </message>
     <message>
-        <source>https://eggcoin.com/</source>
-        <translation>https://eggcoin.com/</translation>
+        <source>https://nesteggcoin.com/</source>
+        <translation>https://nesteggcoin.com/</translation>
     </message>
     <message>
         <source>1</source>

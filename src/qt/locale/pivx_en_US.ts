@@ -3849,8 +3849,8 @@ There was an error trying to save the address list to %1. Please try again.</tra
         <translation>2) Why are my EGG unspendable?</translation>
     </message>
     <message>
-        <source>https://eggcoin.com/</source>
-        <translation>https://eggcoin.com/</translation>
+        <source>https://nesteggcoin.com/</source>
+        <translation>https://nesteggcoin.com/</translation>
     </message>
     <message>
         <source>1</source>

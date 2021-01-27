@@ -342,7 +342,7 @@
                   <enum>Qt::NoFocus</enum>
                  </property>
                  <property name="text">
-                  <string>https://eggcoin.com/</string>
+                  <string>https://nesteggcoin.com/</string>
                  </property>
                 </widget>
                </item>

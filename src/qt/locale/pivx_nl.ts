@@ -3844,8 +3844,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>2) Waarom is mijn EGG niet besteedbaar?</translation>
     </message>
     <message>
-        <source>https://eggcoin.com/</source>
-        <translation>https://eggcoin.com/</translation>
+        <source>https://nesteggcoin.com/</source>
+        <translation>https://nesteggcoin.com/</translation>
     </message>
     <message>
         <source>1</source>

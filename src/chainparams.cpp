@@ -352,14 +352,14 @@ public:
         // nodes with support for servicebits filtering should be at the top
         vSeeds.emplace_back(CDNSSeedData("kyan-testnet.572133.club", "kyan-testnet.572133.club", true));
         vSeeds.emplace_back(CDNSSeedData("kyan-testnet2.572133.club", "kyan-testnet2.572133.club", true));
-        vSeeds.emplace_back(CDNSSeedData("seed1.eggcoin.com", "seed1.eggcoin.com", true));
-        vSeeds.emplace_back(CDNSSeedData("seed2.eggcoin.com", "seed2.eggcoin.com", true));
-        vSeeds.emplace_back(CDNSSeedData("seed3.eggcoin.com", "seed3.eggcoin.com", true));
-        vSeeds.emplace_back(CDNSSeedData("seed4.eggcoin.com", "seed4.eggcoin.com", true));
-        vSeeds.emplace_back(CDNSSeedData("seed5.eggcoin.com", "seed5.eggcoin.com", true));
-        vSeeds.emplace_back(CDNSSeedData("seed6.eggcoin.com", "seed6.eggcoin.com", true));
-        vSeeds.emplace_back(CDNSSeedData("seed7.eggcoin.com", "seed7.eggcoin.com", true));
-        vSeeds.emplace_back(CDNSSeedData("seed8.eggcoin.com", "seed8.eggcoin.com", true));
+        vSeeds.emplace_back(CDNSSeedData("seed1.nesteggcoin.com", "seed1.nesteggcoin.com", true));
+        vSeeds.emplace_back(CDNSSeedData("seed2.nesteggcoin.com", "seed2.nesteggcoin.com", true));
+        vSeeds.emplace_back(CDNSSeedData("seed3.nesteggcoin.com", "seed3.nesteggcoin.com", true));
+        vSeeds.emplace_back(CDNSSeedData("seed4.nesteggcoin.com", "seed4.nesteggcoin.com", true));
+        vSeeds.emplace_back(CDNSSeedData("seed5.nesteggcoin.com", "seed5.nesteggcoin.com", true));
+        vSeeds.emplace_back(CDNSSeedData("seed6.nesteggcoin.com", "seed6.nesteggcoin.com", true));
+        vSeeds.emplace_back(CDNSSeedData("seed7.nesteggcoin.com", "seed7.nesteggcoin.com", true));
+        vSeeds.emplace_back(CDNSSeedData("seed8.nesteggcoin.com", "seed8.nesteggcoin.com", true));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet nestegg addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet nestegg script addresses start with '8' or '9'

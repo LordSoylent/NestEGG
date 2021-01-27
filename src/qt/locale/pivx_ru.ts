@@ -3837,8 +3837,8 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation>2) Почему мои EGG невозможно потратить?</translation>
     </message>
     <message>
-        <source>https://eggcoin.com/</source>
-        <translation>https://eggcoin.com/</translation>
+        <source>https://nesteggcoin.com/</source>
+        <translation>https://nesteggcoin.com/</translation>
     </message>
     <message>
         <source>1</source>
